@@ -1,0 +1,21 @@
+.video {
+
+    @media (max-width: 768px) {
+        .video__player {
+            width: 280px;
+            height: 240px;
+        }
+    }
+
+    &>h2 {
+        text-align: center;
+        margin: 48px 0 24px;
+    }
+
+    .video__container {
+        display: flex; /* Define layout flexbox */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+
+    }
+}

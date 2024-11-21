@@ -1,0 +1,27 @@
+.hero {
+    
+
+    &__image {
+        max-width: 1240px;
+        height: 540px;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            max-width: 640px;
+            height: 320px;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        right: 100px;
+        bottom: 240px;
+        opacity: 0.8;
+
+        @media (max-width: 764px) {
+            max-width: 360px;
+            top: 160px;
+            right: 30px;
+        }
+    }
+}

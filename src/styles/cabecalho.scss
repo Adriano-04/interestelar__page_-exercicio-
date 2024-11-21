@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 14px;
+    padding: 14px 0;
+    background-color: variaveis.$corFundoSecundario;
+
+    h1 {
+        margin-left: 12px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        scroll-behavior: smooth;
+
+        &__item {
+            margin-left: 16px;
+
+            a:hover {
+                color: darken(variaveis.$corTextoPrincipal , 20);
+            }
+        }
+
+    }
+
+
+}

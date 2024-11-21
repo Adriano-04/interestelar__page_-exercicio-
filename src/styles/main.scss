@@ -1,0 +1,64 @@
+@use 'cabecalho';
+@use 'variaveis';
+@use 'hero';
+@use 'sobre';
+@use 'elenco';
+@use 'trailers';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baumans", system-ui;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: variaveis.$corFundo;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        max-width: 680px;
+        width: 90%;
+    }
+}
+
+
+@mixin title($fontSize: 24px) {
+    font-size: $fontSize;
+    color: variaveis.$corTextoSecundario;
+}
+
+@mixin text($fontSize: 18px) {
+    font-size: $fontSize;
+    color: variaveis.$corTextoPrincipal;
+}
+
+.text {
+    @include text;
+}
+
+.text-small {
+    @include text(14px);
+}
+
+.title-big {
+    @include title(32px);
+
+    color: variaveis.$corTextoPrincipal;
+}
+
+.button {
+    background-color: variaveis.$corBotaoPrimario;
+    padding: 8px;
+    text-decoration: none;
+    color: variaveis.$corTextoSecundario;
+    border: 1px solid black;
+}

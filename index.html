@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title-big">Interestelar</h1>
+            <ul class="header__nav">
+                <li class="header__nav__item">
+                    <a href="#about" class="text">Sinopse</a>
+                </li>
+                <li class="header__nav__item">
+                    <a href="#actors" class="text">Elenco</a>
+                </li>
+                <li class="header__nav__item">
+                    <a href="#trailer" class="text">Trailer</a>
+                </li>
+            </ul>
+        </header>
+        <section class="hero">
+            <img src="./src/images/logo.png" alt="Interestelar" class="hero__title">
+            <img src="./src/images/estrelas.png" alt="estrelas" class="hero__image">
+        </section>
+        <section class="about" id="about">
+            <h2 class="title-big">Sinopse</h2>
+            <p class="text">Interestelar é um filme lançado em 2014 de ficção cientifica que foi dirigido por <b>Christopher Nolan</b>.
+                A história segue em um futuro onde a terra esta sofrendo como mudanças climáticas severas e escassez de alimentos,
+                Um grupo de astronautas viaja por um buraco de minhocas recém descoberto para encontrar uma solução para a crise que esta
+                acontecendo na terra durante a jornada a equipe enfrentará desafios relacionados espaço,tempo e gravidade.
+            </p>
+        </section>
+        <section class="actors" id="actors">
+            <h2 class="title-big">Elenco</h2>
+            <ul class="actors__list">
+                <li class="actors__list__item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Matthew_McConaughey_2019_%2848648344772%29_%28cropped%29.jpg/230px-Matthew_McConaughey_2019_%2848648344772%29_%28cropped%29.jpg" alt="" class="actors__image">
+                    <div class="text actors__name">
+                        <h3>Matthew McConaughey</h3>
+                        <p>(Cooper)</p>
+                    </div>
+                </li>
+                <li class="actors__list__item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Anne_Hathaway_at_Berlinale_2023_%28cropped%29.jpg/240px-Anne_Hathaway_at_Berlinale_2023_%28cropped%29.jpg" alt="" class="actors__image">
+                    <div class="text actors__name">
+                        <h3>Anne Hathaway</h3>
+                        <p>(Brand)</p>
+                    </div>
+                </li>
+                <li class="actors__list__item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Jessica_Chastain_Cannes_2016_4_%28cropped%29.jpg/250px-Jessica_Chastain_Cannes_2016_4_%28cropped%29.jpg" alt="" class="actors__image">
+                    <div class="text actors__name">
+                        <h3>Jessica Chastain</h3>
+                        <p>(Murph)</p>
+                    </div>
+                </li>
+                <li class="actors__list__item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/David_Oyelowo_Golden_Globes.jpg/220px-David_Oyelowo_Golden_Globes.jpg" alt="" class="actors__image">
+                    <div class="text actors__name">
+                        <h3>David Oyelowo</h3>
+                        <p>()</p>
+                    </div>
+                </li>
+                <li class="actors__list__item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Interview_with_Timoth%C3%A9e_Chalamet%2C_2019.png/220px-Interview_with_Timoth%C3%A9e_Chalamet%2C_2019.png" alt="" class="actors__image">
+                    <div class="text actors__name">
+                        <h3>Timothée Chalamet</h3>
+                        <p>(Tom)</p>
+                    </div>
+                </li>
+                <li class="actors__list__item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bill_Irwin_by_Gage_Skidmore.jpg/220px-Bill_Irwin_by_Gage_Skidmore.jpg" alt="" class="actors__image">
+                    <div class="text actors__name">
+                        <h3>Bill Irwin</h3>
+                        <p>(TARS)</p>
+                    </div>
+                </li>
+                <li class="actors__list__item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Lithgow.jpg/250px-John_Lithgow.jpg" alt="" class="actors__image">
+                    <div class="text actors__name">
+                        <h3>John Lithgow</h3>
+                        <p>(Donald)</p>
+                    </div>
+                </li>
+                <li class="actors__list__item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Matt_Damon_TIFF_2015.jpg/230px-Matt_Damon_TIFF_2015.jpg" alt="" class="actors__image">
+                    <div class="text actors__name">
+                        <h3>Matt Damon</h3>
+                        <p>(Mann)</p>
+                    </div>
+                </li>
+            </ul>
+            <h4 class="text">Ver mais</h4>
+        </section>
+        <section class="video" id="trailer">
+            <h2 class="title-big">Trailer</h2>
+            <div class="video__container">
+                <iframe class="video__play" width="640" height="380" src="https://www.youtube.com/embed/mbbPSq63yuM?si=vXFaYlrUb2q1XdzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="text">&copy; todos os direitos reservados, 2024. (site para estudo)</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
